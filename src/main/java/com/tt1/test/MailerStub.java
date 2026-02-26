@@ -5,4 +5,5 @@ public class MailerStub {
     public void enviarCorreo (String dirCorreo, String mensaje){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
+    //Mejor implementacion de correo el set para los email, ya son pk
 }
