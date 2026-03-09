@@ -9,16 +9,16 @@ public class Servicio {
     //    throw new UnsupportedOperationException("Clase aún no implementada.");
     //}
     public Servicio(){}
-    public void crearTarea(String nombre, long fechaLimite){
+    public void anadirTarea(String nombre, long fechaLimite){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
-    public void agregarCorreo (String dirCorreo){
+    public void anadirDireccion (String dirCorreo){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
-    public void marcarTareaFinalizada (ToDo tarea){
+    public void marcarCompletada (ToDo tarea){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
-    public List<ToDo> consultarTareasSinCompletar (){
+    public List<ToDo> listarPendientes (){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
 

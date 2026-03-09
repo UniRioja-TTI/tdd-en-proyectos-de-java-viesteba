@@ -5,7 +5,7 @@ import java.util.Date;
 public class ToDo {
     private String nombre;
     private String descripcion;
-    private String fechaLimite;
+    private long fechaLimite;
     private boolean completado;
 
     //Constructor vació explícito
@@ -18,7 +18,7 @@ public class ToDo {
     public void setDescripcion (String descripcion){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
-    public void setFechaLimite (String fecha){
+    public void setFechaLimite (long fecha){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
     public void setCompleta (boolean completado){
