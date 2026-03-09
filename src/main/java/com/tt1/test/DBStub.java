@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
-public class DBStub {
+public class DBStub implements IDBStub{
     private Map<ToDo,Integer> tareas; //autogenerar id autoincremental
     public Set<String> agenda;
     //El email ya es clave primaria
@@ -22,5 +22,4 @@ public class DBStub {
     public ToDo eliminarTarea(){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
-
 }

@@ -2,7 +2,7 @@ package com.tt1.test;
 
 import java.util.Set;
 
-public class Repositorio {
+public class Repositorio implements IRepositorio {
     //Comunicamos con DBStub
 
     public void tareaCompletada(ToDo tarea){

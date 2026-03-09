@@ -2,14 +2,18 @@ package com.tt1.test;
 
 import java.util.Date;
 
-public class ToDo {
+public class ToDo implements IToDo{
     private String nombre;
     private String descripcion;
     private long fechaLimite;
     private boolean completado;
 
     //Constructor vació explícito
-    public ToDo() {
+    public ToDo(){
+        throw new UnsupportedOperationException("Clase aún no implementada.");
+    }
+    public ToDo(String nombre, String descripcion, long fecha, boolean completado) {
+        throw new UnsupportedOperationException("Clase aún no implementada.");
     }
 
     public void setNombre(String nombre){
@@ -25,16 +29,16 @@ public class ToDo {
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
 
-    public String getNombre(ToDo tarea){
+    public String getNombre(){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
-    public String getDescripcion(ToDo tarea){
+    public String getDescripcion(){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
-    public String getFechaLimite(ToDo tarea){
+    public long getFechaLimite(){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
-    public String getCompleta(ToDo tarea){
+    public String getCompleta(){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
 }
