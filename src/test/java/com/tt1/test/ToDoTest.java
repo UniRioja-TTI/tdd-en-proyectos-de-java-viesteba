@@ -20,6 +20,6 @@ public class ToDoTest {
     @Test
     void guardaFechaLimite(){
         ToDo tarea = new ToDo();
-        tarea.setFechaLimite();
+        tarea.setFechaLimite(5);
     }
 }
