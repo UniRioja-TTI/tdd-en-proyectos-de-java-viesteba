@@ -7,4 +7,4 @@ de la Universidad de La Rioja.
 
 ## Licencia
 
-Este proyecto está distribuido bajo la licencia (MIT)[https://mit-license.org/].
+Este proyecto está distribuido bajo la licencia [MIT](https://mit-license.org/).
