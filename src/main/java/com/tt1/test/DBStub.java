@@ -26,4 +26,7 @@ public class DBStub implements IDBStub{
     public List<ToDo> listarTodas(){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
+    public Set<String> getAgenda(){
+    	throw new UnsupportedOperationException("Clase aún no implementada.");
+    }
 }

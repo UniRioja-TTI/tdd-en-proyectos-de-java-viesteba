@@ -9,6 +9,9 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
 class DBStubTest {
+	
+	DBStub db;
+	ToDo tarea;
 
 	@BeforeAll
 	static void setUpBeforeClass() throws Exception {
@@ -20,6 +23,9 @@ class DBStubTest {
 
 	@BeforeEach
 	void setUp() throws Exception {
+		tarea = new ToDo("CTAN","Buscar paquetes",System.currentTimeMillis()+1000,false);
+		db = new DBStub();
+		
 	}
 
 	@AfterEach
@@ -27,8 +33,28 @@ class DBStubTest {
 	}
 
 	@Test
-	void test() {
-		fail("Not yet implemented");
+	void testCrearTarea() {
+		db.crearTarea(tarea);
+		assertEquals(1,db.listarTodas().size());
+	}
+	@Test
+	void testDevolverTarea() {
+		db.crearTarea(tarea);
+		ToDo tareaDevuelta = db.devolverTarea(1);
+		assertEquals(tareaDevuelta,tarea);
+	}
+	@Test
+	void testActualizarTarea() {
+		db.crearTarea(tarea);
+		tarea.setDescripcion("Actualizar latexmk");
+		db.actualizarTarea(tarea);
+		assertEquals(db.devolverTarea(1),tarea);
+	}
+	@Test
+	void testEliminarTarea() {
+		db.crearTarea(tarea);
+		db.eliminarTarea(1);
+		assertNull(db.devolverTarea(1));
 	}
 
 }

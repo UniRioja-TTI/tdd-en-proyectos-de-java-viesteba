@@ -50,4 +50,8 @@ public class ToDo implements Serializable{
     public String getId(){
         throw new UnsupportedOperationException("Clase aún no implementada.");
     }
+    @Override
+    public boolean equals(Object o) {
+    	throw new UnsupportedOperationException("Clase aún no implementada.");
+    }
 }
